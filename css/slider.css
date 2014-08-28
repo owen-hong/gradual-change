@@ -1,0 +1,61 @@
+/*
+ *  simple gallery with jQuery
+ *	made by owenhong 2013-08-08
+ *	作者：小欧(laohonghzy@qq.com) 2013-08-08
+ *  http://www.520ued.com
+ */
+@charset "utf-8";
+#slider {
+	width:960px;
+	height:450px;
+	margin:0 auto;
+	overflow:hidden;
+	position:relative;
+}
+#slider .view {
+	width:960px;
+	height:450px;
+	position: relative;
+}
+#slider .view li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.control {
+	margin:0 auto;
+	position: absolute;
+	z-index: 10;
+	right:47%;
+	bottom: 15px;
+}
+.control li {
+width: 20px;
+height: 20px;
+display: inline;
+}
+.control li a {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	overflow: hidden;
+	background: url(../images/triggers.png) no-repeat 0 0;
+	font-size: 0.2px;
+	line-height: 10000;
+}
+.control li.current a,.control li a:hover {
+	background: url(../images/triggers.png) no-repeat 0 -20px;
+}
+
+
+#btn_prev,#btn_next{
+	width:50px;
+	height:45px;
+	z-index: 99;
+	position:absolute;
+	top: 50%;
+	cursor:pointer;
+	background:url(../images/prev.png);
+}
+#btn_next{right:0;background:url(../images/next.png);}
